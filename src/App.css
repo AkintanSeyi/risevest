@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+body {
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbarhomebar:hover .navText {
+  color: #5cc5ca;
+}
+
+.navbarhomebar:hover .navdot {
+  background-color: #5cc5ca;
+}
+
+.signinbuton:hover .arrowDiv {
+  transform: translateX(4px);
+}
+.footerLi {
+  transition: all 1.5s;
+}
+.footerspan {
+  transition: all 0.5s;
+}
+.footerLi:hover .footerspan {
+  transform: translateY(-8px) translateX(5px);
+}
+
+@keyframes imageAnimate {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes imageFirstAnimate {
+  0% {
+    transform: translateY(-350px) translateX(30px);
+  }
+  25% {
+    transform: translateY(-262.5px) translateX(-30px);
+  }
+  50% {
+    transform: translateY(-175px) translateX(30px);
+  }
+  75% {
+    transform: translateY(-87.5px) translateX(-30px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
 }
 
-.App-link {
-  color: #61dafb;
+.animateFirstImageDiv {
+  animation: imageFirstAnimate 2s ease-in-out 1;
+  transition: all 2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.animateImageDiv {
+  animation: imageAnimate 2s ease-in-out infinite;
+  transition: all 2s;
+}
+
+@media (max-width: 29em) {
+  .footerLi:hover .footerspan {
+    transform: translateY(-4px) translateX(2.5px);
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.animationDiv {
+}
+
+.animationDiv:hover .animationarrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(7px);
+}
+
+.animationarrow {
+  opacity: 0;
+  visibility: 0;
+  transform: translateX(-4px);
+}
+
+.textDiv:hover .textarrowdiv {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(7px);
+}
+
+.textDiv {
+}
+
+.textarrowdiv {
+  opacity: 0;
+  visibility: 0;
+  transform: translateX(-4px);
 }
