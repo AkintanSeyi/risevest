@@ -30,7 +30,7 @@ const Community = () => {
       </Style.Community_FirstSection>
       <Style.Community_SecondSection data-aos="fade-left">
         <Style.Community_FirstSectionDivImg
-          src="https://risevest.com/_next/static/media/rise-community.bac1270e.webp"
+          src="https://image.slidesdocs.com/responsive-images/background/team-of-3d-cartoon-professionals-supporting-each-other-in-business-endeavors-powerpoint-background_0702aa4fcb__960_540.jpg"
           alt="img"
         />
       </Style.Community_SecondSection>

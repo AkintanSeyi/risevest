@@ -66,9 +66,9 @@ export const Community_FirstSectionDiv = styled("div")({
 });
 
 export const Community_FirstSectionDivImg = styled("img")({
-  width: "68%",
+  width: "100%",
   objectFit: "contain",
-  height: "70%",
+  height: "100%",
 });
 
 export const Community_SecondSection = styled("div")({
